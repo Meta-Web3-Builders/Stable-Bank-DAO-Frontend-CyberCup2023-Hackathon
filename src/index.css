@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Outfit:wght@300;400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Outfit", sans-serif;
+  }
+}
+
+.bg-image {
+  background-image: url("./assets/brown.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  backdrop-filter: blur(8px);
+  background-size: cover;
+}
+
+.nav__bar {
+  backdrop-filter: blur(13px) !important;
+  background-color: #0e2433ef;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.105);
+}
+
+.main__button {
+  color: rgba(255, 255, 255, 0.915);
+  border: 1px solid rgba(255, 255, 255, 0.382);
+  background-color: #ee9a40;
+}
+
+@media only screen and (min-width: 768px) {
+  label {
+    transition: 0.2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    background: transparent;
+  }
+
+  textarea:focus + label,
+  input:focus + label,
+  textarea:not(:placeholder-shown) + label,
+  input:not(:placeholder-shown) + label {
+    opacity: 1;
+    background-color: #fff;
+    padding: 4px;
+    font-weight: 600;
+    transform: scale(0.75) translateY(-65%) translateX(-2px);
+  }
+}
+
+.the__modal__wrapper {
+  background-color: rgba(14, 14, 78, 0.092);
+  backdrop-filter: blur(8px);
+}
+
+.the__modal__item {
+  border: 1px solid rgba(255, 255, 255, 0.052);
+  background-color: #14162dce;
+}
