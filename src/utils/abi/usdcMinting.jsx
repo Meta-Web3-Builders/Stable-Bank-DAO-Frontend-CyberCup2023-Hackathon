@@ -2,118 +2,131 @@ export const mintingABI = [
   {
     inputs: [
       {
-        internalType: "address",
-        name: "_susdAddress",
-        type: "address",
-      },
+        "internalType": "address",
+        "name": "_susdAddress",
+        "type": "address"
+      }
     ],
-    stateMutability: "nonpayable",
-    type: "constructor",
+    "stateMutability": "nonpayable",
+    "type": "constructor"
   },
   {
-    inputs: [
+    "inputs": [
       {
-        internalType: "string",
-        name: "",
-        type: "string",
-      },
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
     ],
-    name: "insufficient",
-    type: "error",
+    "name": "insufficient",
+    "type": "error"
   },
   {
-    inputs: [
+    "inputs": [
       {
-        internalType: "string",
-        name: "",
-        type: "string",
-      },
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
     ],
-    name: "minted",
-    type: "error",
+    "name": "minted",
+    "type": "error"
   },
   {
-    anonymous: false,
-    inputs: [
+    "anonymous": false,
+    "inputs": [
       {
-        indexed: true,
-        internalType: "address",
-        name: "_newTokenAddress",
-        type: "address",
-      },
+        "indexed": true,
+        "internalType": "address",
+        "name": "_newTokenAddress",
+        "type": "address"
+      }
     ],
-    name: "addressChanged",
-    type: "event",
+    "name": "changedAddress",
+    "type": "event"
   },
   {
-    anonymous: false,
-    inputs: [
+    "anonymous": false,
+    "inputs": [
       {
-        indexed: true,
-        internalType: "address",
-        name: "minter",
-        type: "address",
+        "indexed": true,
+        "internalType": "address",
+        "name": "minter",
+        "type": "address"
       },
       {
-        indexed: true,
-        internalType: "uint256",
-        name: "amount",
-        type: "uint256",
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
       },
       {
-        indexed: false,
-        internalType: "uint256",
-        name: "timeOfminting",
-        type: "uint256",
-      },
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timeOfminting",
+        "type": "uint256"
+      }
     ],
-    name: "mintedSuccefully",
-    type: "event",
+    "name": "mintedSuccefully",
+    "type": "event"
   },
   {
-    inputs: [],
-    name: "bal",
-    outputs: [
+    "inputs": [],
+    "name": "bal",
+    "outputs": [
       {
-        internalType: "uint256",
-        name: "",
-        type: "uint256",
-      },
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
     ],
-    stateMutability: "view",
-    type: "function",
+    "stateMutability": "view",
+    "type": "function"
   },
   {
-    inputs: [
+    "inputs": [
       {
-        internalType: "uint256",
-        name: "_amount",
-        type: "uint256",
-      },
+        "internalType": "address",
+        "name": "_newTokenAddress",
+        "type": "address"
+      }
     ],
-    name: "changeAmount",
-    outputs: [],
-    stateMutability: "nonpayable",
-    type: "function",
+    "name": "changeTokenAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
   },
   {
-    inputs: [
+    "inputs": [
       {
-        internalType: "address",
-        name: "_newTokenAddress",
-        type: "address",
-      },
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
     ],
-    name: "changeTokenAddress",
-    outputs: [],
-    stateMutability: "nonpayable",
-    type: "function",
+    "name": "decreaseAmount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
   },
   {
-    inputs: [],
-    name: "mintToken",
-    outputs: [],
-    stateMutability: "nonpayable",
-    type: "function",
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "increaseAmount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
   },
+  {
+    "inputs": [],
+    "name": "mintToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
 ];

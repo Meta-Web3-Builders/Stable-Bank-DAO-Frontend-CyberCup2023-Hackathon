@@ -16,14 +16,14 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "animate.css";
 
-const alchemyId = import.meta.env.VITE_POLYGON_ALCHEMY_ID;
+const alchemyId = import.meta.env.VITE_GOERLI_ALCHEMY_ID;
 const { provider, chains } = configureChains(
-  [chain.polygonMumbai],
+  [chain.goerli],
   [
     jsonRpcProvider({
       rpc: (chain) => ({
-        http: `https://polygon-mumbai.g.alchemy.com/v2/${alchemyId}`,
-        webSocket: `wss://polygon-mumbai.g.alchemy.com/v2/${alchemyId}`,
+        http: `https://eth-goerli.g.alchemy.com/v2/${alchemyId}`,
+        webSocket: `wss://eth-goerli.g.alchemy.com/v2/${alchemyId}`,
       }),
     }),
   ]
