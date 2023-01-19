@@ -35,7 +35,12 @@ const Projects = () => {
         {
           address: returnCrowdfund[i],
           abi: crowdfund,
-          functionName: "proposalid",
+          functionName: "crowdFundOwner",
+        },
+        {
+          address: returnCrowdfund[i],
+          abi: crowdfund,
+          functionName: "Description",
         }
       );
     }
@@ -52,7 +57,7 @@ const Projects = () => {
     }
     return chunks;
   };
-  const val = chunckArray(proposals, 4);
+  const val = chunckArray(proposals, 5);
 
   return (
     <div className="bg-[#0e2433] lg:px-16 md:px-8 px-8 pt-12">
@@ -97,13 +102,14 @@ const Projects = () => {
                       alt="banner"
                     />
                   </div>
-                  <Link to={`/proposal/${proposal[3]?.toNumber()}`}>
+                  <Link to={`/proposal/${proposal[3]}`}>
                     <div className="p-6">
                       <h1 className="text-2xl font-medium mb-2">
                         {proposal[0]}
                       </h1>
-                      {/* <p className="mb-2">Agriculture Category</p> */}
-                      {/* <p className="mb-6">
+                      <p className="mb-2">{proposal &&
+                            proposal[4]}{" "}</p>
+                      <p className="mb-6">
                         <strong>
                           {proposal &&
                             ethers.utils.formatUnits(
@@ -122,7 +128,7 @@ const Projects = () => {
                           MATIC
                         </strong>{" "}
                         RAISED.
-                      </p> */}
+                      </p>
 
                       {/* <ProgressBar percentage={"40"} />
                     <div className="flex justify-end text-base">40%</div> */}

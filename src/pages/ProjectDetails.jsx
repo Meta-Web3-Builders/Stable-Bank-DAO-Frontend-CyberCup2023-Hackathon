@@ -34,7 +34,7 @@ const ProjectDetails = () => {
   const { data: singleProposal } = useContractRead({
     ...DAO_CONTRACT,
     functionName: "viewProposal",
-    args: [Number(id)],
+    args: [id],
   });
   console.log(singleProposal);
 
