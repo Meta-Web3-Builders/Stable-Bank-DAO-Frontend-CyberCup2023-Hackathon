@@ -13,7 +13,7 @@ const Navbar = () => {
     <Fragment>
       {pathname === "/" ? null : (
         <div className="flex justify-between items-center nav__bar text-white py-4 lg:px-16 md:px-8 px-8">
-          <Link to={"/"} className="font-bold font-mono text-2xl">
+          <Link to={"/"} className="nav_logo font-bold font-mono text-2xl">
             StableBankDAO
           </Link>
 

@@ -20,8 +20,16 @@
 
 .nav__bar {
   backdrop-filter: blur(13px) !important;
-  background-color: #0e2433ef;
+  background-color: #171429f7;
   border-bottom: 1px solid rgba(255, 255, 255, 0.105);
+}
+
+.nav_logo {
+  background: linear-gradient(180deg, #d88f8f 40.63%, #5c24ff 85.94%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
 }
 
 .main__button {
@@ -51,11 +59,11 @@
 }
 
 .the__modal__wrapper {
-  background-color: rgba(14, 14, 78, 0.092);
+  background-color: rgba(23, 20, 41, 0.608);
   backdrop-filter: blur(8px);
 }
 
 .the__modal__item {
   border: 1px solid rgba(255, 255, 255, 0.052);
-  background-color: #14162dce;
+  background-color: #171429;
 }

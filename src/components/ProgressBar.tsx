@@ -8,7 +8,7 @@ const ProgressBar = ({ percentage }) => {
     <Fragment>
       <div className={'h-2 rounded bg-white_variant'}>
         <div
-          className={`w-[${percentage}%] h-2 rounded bg-tertiary`}
+          className={`w-[${percentage}%] h-2 rounded bg-[#6059f7]`}
         ></div>
       </div>
     </Fragment>

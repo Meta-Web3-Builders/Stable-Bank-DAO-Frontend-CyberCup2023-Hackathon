@@ -105,7 +105,7 @@ const ProjectDetails = () => {
   console.log(singleProposal);
   return (
     <Fragment>
-      <div className="bg-[#0e2433] text-white_variant lg:px-16 md:px-8 px-8 pt-12 min-h-screen">
+      <div className="bg-[#171429] text-white_variant lg:px-16 md:px-8 px-8 pt-12 min-h-screen">
         <div className="mb-8">
           <div className="hidden lg:flex flex-wrap items-center justify-between">
             {/* The in progress button will also be used for cancelled and completed */}

@@ -6,7 +6,7 @@ const LoadingBtn = ({ loading, loadingCopy, copy, ...rest }) => {
     "px-8",
     "rounded",
     "py-3",
-    "bg-tertiary",
+    "bg-[#6059f7]",
     "text-white",
     "font-bold",
     "flex",

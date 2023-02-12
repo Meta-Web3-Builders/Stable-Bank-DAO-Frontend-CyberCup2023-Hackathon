@@ -162,7 +162,7 @@ const VoteProposal = () => {
     }
   }, [rejectAdminError]);
   return (
-    <div className="bg-[#0e2433] min-h-screen lg:px-16 md:px-8 px-8 pt-12">
+    <div className="bg-[#171429] min-h-screen lg:px-16 md:px-8 px-8 pt-12">
       {approveBurnLoading ||
         approveBurnWaitLoading ||
         voteProposalLoading ||

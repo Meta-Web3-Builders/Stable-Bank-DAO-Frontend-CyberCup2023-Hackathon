@@ -5,7 +5,7 @@ const Loader = () => {
   return (
     <div className="fixed top-[30%] left-[35%]">
       <DotLoader color={"#ee9a40"} size={300} />
-      <p className="text-tertiary">Loading...</p>
+      <p className="text-[#6059f7]">Loading...</p>
     </div>
   );
 };

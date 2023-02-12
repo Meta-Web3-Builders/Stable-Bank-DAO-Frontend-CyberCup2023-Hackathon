@@ -125,7 +125,7 @@ export const DonateModal = ({
                   placeholder=" "
                   className="w-full border p-3 text-dark border-primary focus:outline-none rounded"
                 />
-                <label className="hidden md:block pointer-events-none p-3 absolute top-0 left-0 opacity-50 text-tertiary font-semibold">
+                <label className="hidden md:block pointer-events-none p-3 absolute top-0 left-0 opacity-50 text-[#6059f7] font-semibold">
                   Amount
                 </label>
               </div>
@@ -278,7 +278,7 @@ export const JoinDAOModal = ({ setIsOpen }) => {
                   placeholder=" "
                   className="w-full border p-3 text-dark border-primary focus:outline-none rounded"
                 />
-                <label className="hidden md:block pointer-events-none p-3 absolute top-0 left-0 opacity-50 text-tertiary font-semibold">
+                <label className="hidden md:block pointer-events-none p-3 absolute top-0 left-0 opacity-50 text-[#6059f7] font-semibold">
                   Name
                 </label>
               </div>
@@ -385,7 +385,7 @@ export const MintModal = ({ setIsOpen }) => {
                   placeholder=" "
                   className="w-full border p-3 text-dark border-primary focus:outline-none rounded"
                 />
-                <label className="hidden md:block pointer-events-none p-3 absolute top-0 left-0 opacity-50 text-tertiary font-semibold">
+                <label className="hidden md:block pointer-events-none p-3 absolute top-0 left-0 opacity-50 text-[#6059f7] font-semibold">
                   Amount
                 </label>
               </div>

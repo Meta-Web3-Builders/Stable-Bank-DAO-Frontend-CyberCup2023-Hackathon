@@ -71,12 +71,12 @@ const CreateProposal = () => {
   };
 
   return (
-    <div className="bg-[#0e2433] lg:px-16 md:px-8 px-8 pt-12 pb-48 text-white_variant min-h-screen">
+    <div className="bg-[#171429] lg:px-16 md:px-8 px-8 pt-12 pb-48 text-white_variant min-h-screen">
       <form
-        className="mt-5 max-w-[650px] mx-auto border-2 border-tertiary p-4 rounded-2xl md:p-8"
+        className="mt-5 max-w-[650px] mx-auto border-2 border-[#6059f7] p-4 rounded-2xl md:p-8"
         onSubmit={handleSubmit}
       >
-        <h1 className="text-3xl text-center underline mb-8">Create Proposal</h1>
+        <h1 className="text-3xl text-center underline mb-16">Create Proposal</h1>
         <div className="flex items-center justify-between mb-8">
           <h4>Registration Status : </h4>
           <h4

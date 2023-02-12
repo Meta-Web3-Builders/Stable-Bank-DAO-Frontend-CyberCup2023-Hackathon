@@ -60,15 +60,15 @@ const Projects = () => {
   const val = chunckArray(proposals, 5);
 
   return (
-    <div className="bg-[#0e2433] lg:px-16 md:px-8 px-8 pt-12">
+    <div className="bg-[#171429] min-h-screen lg:px-16 md:px-8 px-8 pt-12">
       <div className="text-white_variant font-mono t-12 pb-32">
         <div className="mb-12 text-xl">
           The list of proposals/projects that you can fund at Stable Bank DAO.
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-          <div className="border-2 border-tertiary text-xl rounded-3xl">
-            <div className="border-b-2 border-tertiary pb-2">
+          <div className="border-2 border-[#6059f7] text-xl rounded-3xl">
+            <div className="border-b-2 border-[#6059f7] pb-2">
               <img
                 src={orphans}
                 className="rounded-t-3xl w-[100%] h-[250px] object-contain"
@@ -93,9 +93,9 @@ const Projects = () => {
               return (
                 <div
                   key={i}
-                  className="border-2 border-tertiary text-xl rounded-3xl"
+                  className="border-2 border-[#6059f7] text-xl rounded-3xl"
                 >
-                  <div className="border-b-2 border-tertiary pb-2">
+                  <div className="border-b-2 border-[#6059f7] pb-2">
                     <img
                       src={Banner}
                       className="rounded-t-3xl w-[100%] h-[250px]"

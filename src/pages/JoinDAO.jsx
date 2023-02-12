@@ -58,7 +58,7 @@ const JoinDAO = () => {
   return (
     <>
       {isOpen && <JoinDAOModal setIsOpen={setIsOpen} />}
-      <div className="bg-[#0e2433] text-white_variant lg:px-16 md:px-8 px-8 pt-7 min-h-screen">
+      <div className="bg-[#171429] text-white_variant lg:px-16 md:px-8 px-8 pt-7 min-h-screen">
         <div className="mb-3 flex justify-end">
           {adminAddressDetails === address && (
             <Link

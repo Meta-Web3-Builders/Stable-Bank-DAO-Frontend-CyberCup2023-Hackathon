@@ -62,17 +62,17 @@ const FundMe = () => {
           <div className="flex justify-center lg:justify-start  mt-[4rem] lg:mb-0">
             <Link
               to={"#"}
-              className="bg-tertiary px-8 py-2 text-xl rounded font-medium"
+              className="bg-[#6059f7] px-8 py-2 text-xl rounded font-medium"
             >
               Fund a project
             </Link>
             <Link
               to={"/projects"}
-              className="bg-tertiary px-8 py-2 text-xl rounded font-medium ml-32"
+              className="bg-[#6059f7] px-8 py-2 text-xl rounded font-medium ml-32"
             >
               View all funding
             </Link>
-            {/* <button className="bg-tertiary px-5 py-2 text-xl rounded font-medium ml-4">
+            {/* <button className="bg-[#6059f7] px-5 py-2 text-xl rounded font-medium ml-4">
               
             </button> */}
           </div>
@@ -90,9 +90,9 @@ const FundMe = () => {
               return (
                 <div
                   key={i}
-                  className="border-2 border-tertiary text-xl rounded-3xl"
+                  className="border-2 border-[#6059f7] text-xl rounded-3xl"
                 >
-                  <div className="border-b-2 border-tertiary pb-2">
+                  <div className="border-b-2 border-[#6059f7] pb-2">
                     <img
                       src={Banner}
                       className="rounded-t-3xl w-[100%] h-[250px]"
